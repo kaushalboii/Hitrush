@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using Hitrush.World;
+using Hitrush.Systems;
 
 namespace Hitrush.Collectibles
 {

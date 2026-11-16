@@ -1,5 +1,7 @@
+using System;
 using UnityEngine;
 using Hitrush.World;
+using Hitrush.Systems;
 
 namespace Hitrush.Collectibles
 {
@@ -11,16 +13,25 @@ namespace Hitrush.Collectibles
         [SerializeField] private float bobSpeed = 2f;
         [SerializeField] private Material glowMaterial;
         [SerializeField] private ParticleSystem collectParticles;
-        
+
         [Header("Audio")]
         [SerializeField] private AudioClip collectSound;
-        
+
         [Header("Value")]
         [SerializeField] private int coinValue = 1;
-        
+
         private Vector3 startPosition;
         private bool isCollected = false;
         private float collectAnimationTime = 0f;
+
+        public bool IsCollected() => isCollected;
+
+        public void ResetCoin()
+        {
+            isCollected = false;
+            startPosition = transform.position;
+            gameObject.SetActive(true);
+        }
         
         private void Start()
         {

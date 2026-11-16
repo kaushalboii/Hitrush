@@ -1,5 +1,7 @@
 using UnityEngine;
 using Hitrush.Player;
+using Hitrush.Systems;
+using Hitrush.World;
 
 namespace Hitrush.Collectibles
 {
@@ -7,7 +9,7 @@ namespace Hitrush.Collectibles
     {
         [Header("Settings")]
         [SerializeField] private PowerUpType powerUpType;
-        [SerializeField] private float duration = 10f;
+        [SerializeField] protected float duration = 10f;
         [SerializeField] private float rotationSpeed = 90f;
         [SerializeField] private float bobHeight = 0.5f;
         [SerializeField] private float bobSpeed = 1.5f;

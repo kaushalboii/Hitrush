@@ -1,4 +1,7 @@
+using System;
+using UnityEngine;
 using Hitrush.Player;
+using Hitrush.Systems;
 
 namespace Hitrush.Collectibles
 {

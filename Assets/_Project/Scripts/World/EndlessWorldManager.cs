@@ -1,6 +1,8 @@
 using UnityEngine;
 using Hitrush.Obstacles;
 using Hitrush.Collectibles;
+using Hitrush.Systems;
+using Hitrush.Core;
 
 namespace Hitrush.World
 {

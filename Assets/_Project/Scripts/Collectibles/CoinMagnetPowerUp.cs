@@ -1,5 +1,7 @@
+using System;
 using UnityEngine;
 using Hitrush.Player;
+using Hitrush.Systems;
 
 namespace Hitrush.Collectibles
 {
@@ -19,12 +21,9 @@ namespace Hitrush.Collectibles
                 magnetRoutine = playerController.StartCoroutine(MagnetRoutine(playerController));
             }
             
-            // Visual feedback on player
-            var magnetEffect = player.GetComponentInChildren<CoinMagnetEffect>();
-            if (magnetEffect == null)
-            {
-                // Could add a magnet visual effect here
-            }
+            // Visual feedback on player - CoinMagnetEffect would be a separate visual component
+            // var magnetEffect = player.GetComponentInChildren<CoinMagnetEffect>();
+            // if (magnetEffect == null) { }
         }
         
         private System.Collections.IEnumerator MagnetRoutine(PlayerController controller)

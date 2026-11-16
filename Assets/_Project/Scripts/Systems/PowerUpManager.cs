@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using Hitrush.Collectibles;
 using System.Collections.Generic;
